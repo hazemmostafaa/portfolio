@@ -4,6 +4,14 @@ A React and Vite web application for presenting data analytics, business intelli
 
 Rather than a static resume page, this site works as a project showcase for BI dashboards and full-stack data products.
 
+## Live Site
+
+After GitHub Pages is enabled, the project is available at:
+
+```text
+https://hazemmostafaa.github.io/portfolio/
+```
+
 ## Features
 
 - Responsive single-page project showcase
@@ -66,6 +74,20 @@ Build for production:
 ```bash
 npm run build
 ```
+
+## Deploy
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
+
+To publish the site:
+
+1. Open the repository on GitHub.
+2. Go to `Settings`.
+3. Go to `Pages`.
+4. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+5. Push to `main`, or run the `Deploy to GitHub Pages` workflow manually from the `Actions` tab.
+
+The Vite production build uses `/portfolio/` as its base path so assets load correctly from the GitHub Pages project URL.
 
 ## Add New Work
 
