@@ -1,16 +1,9 @@
 import { useMemo, useState } from 'react';
 import heroImage from './assets/data-workspace.png';
+import tabeebyVideo from './assets/tabeeby/tabeeby.mp4';
 
 const tazabeetVideos = Object.values(
   import.meta.glob('./assets/tazabeet/*.{mp4,MP4,mov,MOV,webm,WEBM}', {
-    eager: true,
-    query: '?url',
-    import: 'default',
-  }),
-);
-
-const tabeebyVideos = Object.values(
-  import.meta.glob('./assets/tabeeby/*.{mp4,MP4,mov,MOV,webm,WEBM}', {
     eager: true,
     query: '?url',
     import: 'default',
@@ -105,10 +98,10 @@ const projects = [
     media: {
       type: 'video',
       eyebrow: 'Platform walkthrough',
-      title: 'Product demo',
-      note: 'A walkthrough space for capacity dashboards, hospital flows, and mobile/PWA screens.',
+      title: 'Tabeeby product demo',
+      note: 'A walkthrough for capacity dashboards, hospital flows, and mobile/PWA screens.',
       actionLabel: 'Watch demo',
-      videoSrc: tabeebyVideos[0],
+      videoSrc: tabeebyVideo,
     },
   },
   {
